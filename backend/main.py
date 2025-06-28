@@ -17,7 +17,7 @@ app.add_middleware(
 class ImageRequest(BaseModel):
     image_base64: str
 
-GOOGLE_VISION_API_KEY = "AIzaSyBO1laqbezu0LMjKnL0uidKpCQM0moaU0w"
+GOOGLE_VISION_API_KEY = ""
 GOOGLE_VISION_API_URL = f"https://vision.googleapis.com/v1/images:annotate?key={GOOGLE_VISION_API_KEY}"
 
 @app.post("/analyze-image")
